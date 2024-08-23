@@ -1,0 +1,13 @@
+﻿{
+  "Name": "httpscars.av.by",
+  "Type": "Screen",
+  "Id": "z92KH0a4nU6HEZsK1NcI6w",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/z92KH0a4nU6HEZsK1NcI6w",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/BSHBCX_2cU6yUA6Id5Rf7A",
+  "Created": "2024-08-23T16:22:31.7598893Z",
+  "Updated": "2024-08-23T16:22:31.7598893Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

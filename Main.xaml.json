@@ -52,6 +52,18 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "STR_URL_CARSAVBY",
+      "DisplayName": "STR_URL_CARSAVBY",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "https://cars.av.by/",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }

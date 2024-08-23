@@ -1,0 +1,12 @@
+﻿{
+  "Name": "httpscars.av.by",
+  "Type": "App",
+  "Id": "G_HV6yhG8USJImBCIsmiPg",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/G_HV6yhG8USJImBCIsmiPg",
+  "Created": "2024-08-23T16:22:31.6400569Z",
+  "Updated": "2024-08-23T16:22:31.6400569Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
