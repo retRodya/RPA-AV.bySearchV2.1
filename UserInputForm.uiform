@@ -1,0 +1,72 @@
+﻿{
+  "Metadata": {
+    "Id": "71faa046-fa5c-454a-a9bf-81acd99f3d16",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Car criteria",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Make",
+        "labelPosition": "left-left",
+        "placeholder": "enter car make",
+        "tableView": true,
+        "key": "make",
+        "type": "textfield",
+        "input": true,
+        "labelWidth": 3,
+        "labelMargin": 4
+      },
+      {
+        "label": "Model",
+        "labelPosition": "left-left",
+        "placeholder": "enter car model",
+        "tableView": true,
+        "key": "model",
+        "type": "textfield",
+        "input": true,
+        "labelWidth": 3,
+        "labelMargin": 3
+      },
+      {
+        "label": "Price",
+        "placeholder": "min price, BYN",
+        "tableView": false,
+        "delimiter": false,
+        "requireDecimal": false,
+        "truncateMultipleSpaces": false,
+        "key": "pricemMin",
+        "type": "number",
+        "input": true
+      },
+      {
+        "label": "PriceMax",
+        "placeholder": "max price, BYN",
+        "hideLabel": true,
+        "tableView": false,
+        "delimiter": false,
+        "requireDecimal": false,
+        "truncateMultipleSpaces": false,
+        "key": "priceMax",
+        "type": "number",
+        "input": true
+      },
+      {
+        "label": "Send criteria",
+        "showValidations": false,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}
