@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Type Into 'min price'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "euS7mxDvV0WUYh_zCx2uCA",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/euS7mxDvV0WUYh_zCx2uCA",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:37:07.8212158Z",
+  "Updated": "2024-08-24T20:38:19.0466282Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

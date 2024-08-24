@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Select Item Model",
+  "Type": "Element",
+  "Id": "SQkjqgcQaU2OX3zp_T88Cw",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/SQkjqgcQaU2OX3zp_T88Cw",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:37:25.0190527Z",
+  "Updated": "2024-08-24T20:37:25.0190527Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

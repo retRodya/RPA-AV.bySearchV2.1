@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Currency'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "S44CVIPKlkGpJl0o-4sx5A",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/S44CVIPKlkGpJl0o-4sx5A",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:36:48.8243396Z",
+  "Updated": "2024-08-24T20:36:48.8243396Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
