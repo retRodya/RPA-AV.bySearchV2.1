@@ -32,6 +32,7 @@
         "label": "Model",
         "labelPosition": "left-left",
         "placeholder": "enter car model",
+        "description": "Enter model name correctly (e.g. Model X)",
         "tableView": true,
         "key": "str_model",
         "type": "textfield",
@@ -62,6 +63,9 @@
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
+        "validate": {
+          "max": 999999
+        },
         "key": "int_priceMax",
         "type": "number",
         "input": true
