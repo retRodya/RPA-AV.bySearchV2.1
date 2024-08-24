@@ -5,7 +5,9 @@
   },
   "DesignProperties": {
     "Title": "Car criteria",
-    "Theme": "Default",
+    "Width": 500,
+    "Height": 500,
+    "Theme": "Sandstone",
     "ShowInTaskbar": true,
     "ShowMargin": true,
     "CustomStyle": ""
@@ -17,31 +19,41 @@
         "labelPosition": "left-left",
         "placeholder": "enter car make",
         "tableView": true,
-        "key": "make",
+        "defaultValue": "Tesla",
+        "validate": {
+          "required": true
+        },
+        "key": "str_make",
         "type": "textfield",
-        "input": true,
-        "labelWidth": 3,
-        "labelMargin": 4
+        "labelWidth": 5,
+        "labelMargin": 5,
+        "input": true
       },
       {
         "label": "Model",
         "labelPosition": "left-left",
         "placeholder": "enter car model",
         "tableView": true,
-        "key": "model",
+        "defaultValue": "Model X",
+        "key": "str_model",
         "type": "textfield",
-        "input": true,
-        "labelWidth": 3,
-        "labelMargin": 3
+        "labelWidth": 5,
+        "labelMargin": 5,
+        "input": true
       },
       {
         "label": "Price",
         "placeholder": "min price, BYN",
         "tableView": false,
+        "defaultValue": 1,
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
-        "key": "pricemMin",
+        "validate": {
+          "required": true,
+          "min": 0
+        },
+        "key": "int_pricemMin",
         "type": "number",
         "input": true
       },
@@ -53,9 +65,10 @@
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
-        "key": "priceMax",
+        "key": "int_priceMax",
         "type": "number",
-        "input": true
+        "input": true,
+        "defaultValue": 999999
       },
       {
         "label": "Send criteria",

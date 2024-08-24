@@ -6,7 +6,7 @@
     <x:Property Name="out_int_priceMax" Type="OutArgument(x:Int32)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1042,672</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1026,3137</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -138,7 +138,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Start point" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766,1890" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Start point" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766,3072" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="upaf:FormTaskData" Name="ftd_UserInputForm" />
     </Sequence.Variables>
@@ -146,10 +146,10 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Form fill Sequence" sap:VirtualizedContainerService.HintSize="704,1723" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence sap2010:Annotation.AnnotationText="It's important to put whole sequence in Main Seq to prevent error:&#xD;&#xA;&#xD;&#xA;System.Activities.ValidationException: An extension of type 'UiPath.Activities.Contracts.Persistence.IPersistenceBookmarks' must be configured in order to run this workflow. &#xD;&#xA;&#xD;&#xA;Просто делать подобное было очень интересно, решать проблемы и прочее. Какой-то фуллстек на минималках: вроде и прогаешь(хоть и визуально), а вроде еще и визуально даешь это представлять(как мини фронтэдер какой-то). Романтично, так сказать." DisplayName="Form fill Sequence" sap:VirtualizedContainerService.HintSize="704,1811" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="str_yes" />
       </Sequence.Variables>
@@ -157,9 +157,10 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="YesNo" Caption="Form fill choise" DisplayName="Form fill choise Message Box" sap:VirtualizedContainerService.HintSize="642,117" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+      <ui:MessageBox sap2010:Annotation.AnnotationText="Asks way to fill form" AutoCloseAfter="00:00:00" Buttons="YesNo" Caption="Form fill choise" DisplayName="Form fill choise Message Box" sap:VirtualizedContainerService.HintSize="642,88" sap2010:WorkflowViewState.IdRef="MessageBox_1">
         <ui:MessageBox.ChosenButton>
           <OutArgument x:TypeArguments="x:String">
             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">str_yes</CSharpReference>
@@ -172,11 +173,13 @@
         </ui:MessageBox.Text>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MessageBox>
-      <If sap2010:Annotation.AnnotationText="YES  require UiPath.Form.Activities v.23.4.7&#xD;&#xA;Because bugs accures on new versions:&#xD;&#xA;&#xD;&#xA;System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it. &#xD;&#xA;&#xD;&#xA;I dunnoi what to do" DisplayName="if YES / NO (Orchestrator/Locally)" sap:VirtualizedContainerService.HintSize="642,1518" sap2010:WorkflowViewState.IdRef="If_2">
+      <If sap2010:Annotation.AnnotationText="YES require UiPath.Form.Activities v.23.4.7.&#xD;&#xA;It will ask again in fututre.&#xD;&#xA;&#xA;Because bugs accures on new versions:&#xA;&#xA;System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it. " DisplayName="if YES / NO (Orchestrator/Locally)" sap:VirtualizedContainerService.HintSize="642,1471" sap2010:WorkflowViewState.IdRef="If_2">
         <If.Condition>
           <InArgument x:TypeArguments="x:Boolean">
             <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">str_yes == "Yes"</CSharpValue>
@@ -186,17 +189,18 @@
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="YES = Orchestrator" sap:VirtualizedContainerService.HintSize="608,995" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="YES = Orchestrator" sap:VirtualizedContainerService.HintSize="608,1183" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MessageBox sap2010:Annotation.AnnotationText="Ofc user shouldn't see this kind of messages, but it for trainning and tests" AutoCloseAfter="00:00:00" Buttons="YesNo" Caption="Form fill choise" DisplayName="UiPath.Form.Activities v.23.4.7 Message Box" sap:VirtualizedContainerService.HintSize="546,159" sap2010:WorkflowViewState.IdRef="MessageBox_3">
+            <ui:MessageBox sap2010:Annotation.AnnotationText="Ask again.&#xD;&#xA;&#xD;&#xA;Ofc user shouldn't see this kind of messages, but it for trainning and tests" AutoCloseAfter="00:00:00" Buttons="YesNo" Caption="WARRNIG" DisplayName="UiPath.Form.Activities v.23.4.7 Message Box" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="MessageBox_3">
               <ui:MessageBox.ChosenButton>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">str_yes</CSharpReference>
@@ -214,7 +218,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
-            <If DisplayName="if YES / NO (version)" sap:VirtualizedContainerService.HintSize="546,748" sap2010:WorkflowViewState.IdRef="If_3">
+            <If DisplayName="if YES / NO (version)" sap:VirtualizedContainerService.HintSize="546,906" sap2010:WorkflowViewState.IdRef="If_3">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">str_yes == "Yes"</CSharpValue>
@@ -226,21 +230,21 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="YES" sap:VirtualizedContainerService.HintSize="512,304" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <Sequence DisplayName="YES" sap:VirtualizedContainerService.HintSize="512,720" sap2010:WorkflowViewState.IdRef="Sequence_21">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="FIll Form Via Orchestrator Sequence" sap:VirtualizedContainerService.HintSize="450,216" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="FIll Form Via Orchestrator Sequence" sap:VirtualizedContainerService.HintSize="450,632" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TaskCatalog="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="0dc28f6c-fc45-453b-b80f-6851a6c447b9" DisplayName="User fills form activity" EnableBulkEdit="False" EnableDynamicForms="False" EnableV2="False" FolderPath="rodion8999@gmail.com's workspace" FormLayout="%[{&quot;label&quot;:&quot;Make&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car make&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;str_make&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:3,&quot;labelMargin&quot;:4,&quot;input&quot;:true},{&quot;label&quot;:&quot;Model&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car model&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;str_model&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:3,&quot;labelMargin&quot;:3,&quot;input&quot;:true},{&quot;label&quot;:&quot;Price&quot;,&quot;placeholder&quot;:&quot;min price, BYN&quot;,&quot;tableView&quot;:true,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;key&quot;:&quot;int_priceMin&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;PriceMax&quot;,&quot;placeholder&quot;:&quot;max price, BYN&quot;,&quot;hideLabel&quot;:true,&quot;tableView&quot;:true,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;key&quot;:&quot;int_priceMax&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Send criteria&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;sendCriteria&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]" FormLayoutGuid="af5b938a-1a10-4e33-9893-22ce7d680e0c" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="CreateFormTask_2" TaskTitle="User fills form">
+                    <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TaskCatalog="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="6d4e9bf6-e80f-46e9-9613-bb2ea2649e59" DisplayName="User fills form activity" EnableBulkEdit="False" EnableDynamicForms="False" EnableV2="False" FolderPath="rodion8999@gmail.com's workspace" FormLayout="%[{&quot;label&quot;:&quot;Make&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car make&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;str_make&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:5,&quot;labelMargin&quot;:5,&quot;input&quot;:true,&quot;defaultValue&quot;:&quot;Tesla&quot;},{&quot;label&quot;:&quot;Model&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car model&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;str_model&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:5,&quot;labelMargin&quot;:5,&quot;input&quot;:true,&quot;defaultValue&quot;:&quot;Model X&quot;},{&quot;label&quot;:&quot;Price&quot;,&quot;placeholder&quot;:&quot;min price, BYN&quot;,&quot;tableView&quot;:true,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;int_priceMin&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true,&quot;defaultValue&quot;:0},{&quot;label&quot;:&quot;PriceMax&quot;,&quot;placeholder&quot;:&quot;max price, BYN&quot;,&quot;hideLabel&quot;:true,&quot;tableView&quot;:true,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;validate&quot;:{&quot;max&quot;:999999},&quot;key&quot;:&quot;int_priceMax&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true,&quot;defaultValue&quot;:999999},{&quot;label&quot;:&quot;Send criteria&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;sendCriteria&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]" FormLayoutGuid="5283378f-722f-4ab3-93ef-06ee7c7179c8" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="388,357" sap2010:WorkflowViewState.IdRef="CreateFormTask_2" TaskTitle="User fills form">
                       <upaf:CreateFormTask.FormData>
                         <OutArgument x:TypeArguments="x:String" x:Key="str_make">
                           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">out_str_make</CSharpReference>
@@ -268,11 +272,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </upaf:CreateFormTask>
-                    <upaf:WaitForFormTaskAndResume StatusMessage="{x:Null}" TaskAction="{x:Null}" TimeoutMs="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait Form fill and Resume" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="WaitForFormTaskAndResume_1">
+                    <upaf:WaitForFormTaskAndResume StatusMessage="{x:Null}" TaskAction="{x:Null}" TimeoutMs="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait Form fill and Resume" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="WaitForFormTaskAndResume_1">
                       <upaf:WaitForFormTaskAndResume.TaskInput>
                         <InArgument x:TypeArguments="upaf:FormTaskData">
                           <CSharpValue x:TypeArguments="upaf:FormTaskData" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">ftd_UserInputForm</CSharpValue>
@@ -285,8 +289,8 @@
                       </upaf:WaitForFormTaskAndResume.TaskOutput>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </upaf:WaitForFormTaskAndResume>
@@ -294,14 +298,14 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="NO" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <Sequence DisplayName="NO" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_22">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Userfills.uiformSequence" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Userfills.uiformSequence.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Userfills.uiformSequence" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UserInputForm.uiformSequence.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="upaf:FormTaskData" x:Key="ftd_UserInputForm">
                         <CSharpValue x:TypeArguments="upaf:FormTaskData" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">ftd_UserInputForm</CSharpValue>
@@ -321,7 +325,7 @@
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
@@ -331,14 +335,14 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="NO = locally" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="NO = locally" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Userfills.uiformSequence" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Userfills.uiformSequence.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Userfills.uiformSequence" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UserInputForm.uiformSequence.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="upaf:FormTaskData" x:Key="ftd_UserInputForm">
                   <CSharpValue x:TypeArguments="upaf:FormTaskData" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">ftd_UserInputForm</CSharpValue>
@@ -358,7 +362,7 @@
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
@@ -366,11 +370,11 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="AV.by Sequence" sap:VirtualizedContainerService.HintSize="704,48" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence DisplayName="AV.by Sequence" sap:VirtualizedContainerService.HintSize="704,1142" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:CommentOut sap2010:Annotation.AnnotationText="Commented cause it not neccesary for procces" DisplayName="Assets understanting" sap:VirtualizedContainerService.HintSize="450,99" sap2010:WorkflowViewState.IdRef="CommentOut_1">
@@ -379,7 +383,7 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:GetRobotAsset TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Yeah i got how assets work and create 1 for url&#xA;&#xA;Orchestrator folder path - rodion8999@gmail.com's workspace&#xA;Asset Name - URL_cars.av.by  = &quot;https://cars.av.by/&quot;&#xA;&#xA;URL - cause in smth like constant&#xA;_cars.av.by - to get little info and understanding of url of what.&#xA;So maybe not best naming" AssetName="URL_cars.av.by" CacheStrategy="None" DisplayName="Get Asset" FolderPath="rodion8999@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="354,328" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
@@ -388,7 +392,7 @@
               </ui:GetRobotAsset.Value>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -403,15 +407,15 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Constant have used cause no need to use created on previous step asset" AttachMode="ByInstance" DisplayName="https://cars.av.by/" sap:VirtualizedContainerService.HintSize="450,1298" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V2">
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Constant have used cause no need to use created on previous step asset" AttachMode="ByInstance" DisplayName="https://cars.av.by/" sap:VirtualizedContainerService.HintSize="450,932" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do on page:" sap:VirtualizedContainerService.HintSize="416,985" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence DisplayName="Do on page:" sap:VirtualizedContainerService.HintSize="416,621" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="make">
+                <Variable x:TypeArguments="x:String" Name="str_make">
                   <Variable.Default>
                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">out_str_make</CSharpValue>
                   </Variable.Default>
@@ -420,10 +424,10 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Word Make saw on another car saling website&#xA;Make  = Brand btw&#xA;&#xA;Is an Object Repository neccesary for better activity work?" ClickType="Single" DisplayName="Click Make" sap:VirtualizedContainerService.HintSize="354,276" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V3">
+              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Word Make saw on another car saling website&#xA;Make  = Brand btw&#xA;&#xA;Is an Object Repository neccesary for better activity work?" ClickType="Single" DisplayName="Click Make" sap:VirtualizedContainerService.HintSize="354,174" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cars.av.by/" CVScreenId="336bf2c2-1ebc-4b67-8fc5-cbc087ed6c0b" ContentHash="vODQYJBK3UafZXVXPyjF1A" CvElementArea="413, 913, 18, 18" CvTextArea="359, 914, 53, 19" CvTextArgument="Mapka" CvType="ArrowButton" DesignTimeRectangle="340, 499, 301, 44" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl name='p-6-0-2-brand' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl name='p-6-0-2-brand' tag='BUTTON' type='button' class='dropdown__control dropdown-floatlabel' aaname='Марка' check:innerText='Марка&amp;#xD;&amp;#xA;Марка' /&gt;" Guid="2882938f-067f-47ab-a36f-88f39b3c9d34" ImageBase64="" InformativeScreenshot="d07f3ce312ffdc5c3dc86a266ce6bd72.png" Reference="AhCJEiCTkUypM6mbflUmyw/bL8CutAFOUiPtcpMkzeM1w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о продаже автомобилей в Беларуси. Купить или продать автомобиль с пробегом, новый или б/у на Автомалиновке.' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -441,16 +445,16 @@
                 </uix:NTypeInto.Target>
                 <uix:NTypeInto.Text>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">make</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">out_str_make</CSharpValue>
                   </InArgument>
                 </uix:NTypeInto.Text>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Currency'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Currency'" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cars.av.by/" DesignTimeRectangle="866, 821, 77, 44" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl name='p-10-price_currency' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl name='p-10-price_currency' tag='BUTTON' type='button' class='dropdown__control dropdown__control--active dropdown-floatlabel' aaname='USD' check:innerText='Валюта&amp;#xD;&amp;#xA;USD' /&gt;" Guid="bc2dec96-cd11-4ac5-b644-5661b8176eb5" ImageBase64="" InformativeScreenshot="0ccc667e30ff4515d03d37c3aba6f323.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о продаже автомобилей в Беларуси. Купить или продать автомобиль с пробегом, новый или б/у на Автомалиновке.' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -460,13 +464,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BYN'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BYN'" sap:VirtualizedContainerService.HintSize="354,50" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a357840e-8a0a-42b4-93e7-bf9903604b2c" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://cars.av.by/" CVScreenId="b12dcf12-a2b9-4b3f-a8a1-c93d549ff09b" CvElementArea="863, 735, 362, 41" CvType="InputBox" DesignTimeRectangle="866, 904, 270, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='BYN' class='dropdown__listbutton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='BYN' class='dropdown__listbutton' tag='BUTTON' type='button' check:innerText='BYN' /&gt;" Guid="56d33816-a373-4793-bc4f-fec3b35055d1" ImageBase64="" InformativeScreenshot="b4486989019f332dfb645a9546d65864.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о продаже автомобилей в Беларуси. Купить или продать автомобиль с пробегом, новый или б/у на Автомалиновке.' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
@@ -486,6 +490,7 @@
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
