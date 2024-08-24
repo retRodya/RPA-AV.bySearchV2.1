@@ -1,6 +1,5 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Userfills_uiformSequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:upaf="clr-namespace:UiPath.Persistence.Activities.FormTask;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Userfills_uiformSequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="ftd_UserInputForm" Type="InArgument(upaf:FormTaskData)" />
     <x:Property Name="out_str_make" Type="InArgument(x:String)" />
     <x:Property Name="out_str_model" Type="InArgument(x:String)" />
     <x:Property Name="out_int_priceMin" Type="InArgument(x:Int32)" />
@@ -51,6 +50,8 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -122,41 +123,33 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UserInputForm.uiformSequence" sap:VirtualizedContainerService.HintSize="512,408" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence DisplayName="UserInputForm.uiformSequence" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="User fills .uiform Sequence" sap:VirtualizedContainerService.HintSize="450,320" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Show UserInputForm.uiform" FormId="71faa046-fa5c-454a-a9bf-81acd99f3d16" sap:VirtualizedContainerService.HintSize="354,209" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="False" Title="Car criteria">
+      <ufa:ShowFormActivity.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="str_make">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">out_str_make</CSharpReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="str_model">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">out_str_model</CSharpReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="int_priceMax">
+          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">out_int_priceMax</CSharpReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="int_priceMin">
+          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">out_int_priceMin</CSharpReference>
+        </OutArgument>
+      </ufa:ShowFormActivity.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Show UserInputForm.uiform" FormId="71faa046-fa5c-454a-a9bf-81acd99f3d16" sap:VirtualizedContainerService.HintSize="388,209" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="False" Title="Car criteria">
-        <ufa:ShowFormActivity.Arguments>
-          <OutArgument x:TypeArguments="x:String" x:Key="str_make">
-            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">out_str_make</CSharpReference>
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="str_model">
-            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">out_str_model</CSharpReference>
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:Int32" x:Key="int_pricemMin">
-            <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">out_int_priceMin</CSharpReference>
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:Int32" x:Key="int_priceMax">
-            <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">out_int_priceMax</CSharpReference>
-          </OutArgument>
-        </ufa:ShowFormActivity.Arguments>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ufa:ShowFormActivity>
-    </Sequence>
+    </ufa:ShowFormActivity>
   </Sequence>
 </Activity>
