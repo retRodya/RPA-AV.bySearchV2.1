@@ -1,12 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Userfills_uiformSequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="out_str_make" Type="InArgument(x:String)" />
-    <x:Property Name="out_str_model" Type="InArgument(x:String)" />
-    <x:Property Name="out_int_priceMin" Type="InArgument(x:Int32)" />
-    <x:Property Name="out_int_priceMax" Type="InArgument(x:Int32)" />
+    <x:Property Name="out_str_make" Type="OutArgument(x:String)" />
+    <x:Property Name="out_str_model" Type="OutArgument(x:String)" />
+    <x:Property Name="out_int_priceMin" Type="OutArgument(x:Int32)" />
+    <x:Property Name="out_int_priceMax" Type="OutArgument(x:Int32)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1026,656</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1237,656</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,31 +123,32 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UserInputForm.uiformSequence" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence DisplayName="UserInputForm.uiformSequence" sap:VirtualizedContainerService.HintSize="416,354" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Show UserInputForm.uiform" FormId="71faa046-fa5c-454a-a9bf-81acd99f3d16" sap:VirtualizedContainerService.HintSize="354,209" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="False" Title="Car criteria">
+    <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" sap2010:Annotation.AnnotationText="This shity form doesn't support default values in field. They stay null/0 if don't interact with field even when field filled by default" DisplayName="Show UserInputForm.uiform" FormId="71faa046-fa5c-454a-a9bf-81acd99f3d16" sap:VirtualizedContainerService.HintSize="354,266" sap2010:WorkflowViewState.IdRef="ShowFormActivity_1" IsAsync="False" Title="Car criteria">
       <ufa:ShowFormActivity.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="str_make">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">out_str_make</CSharpReference>
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">out_str_make</CSharpReference>
         </OutArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="str_model">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">out_str_model</CSharpReference>
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">out_str_model</CSharpReference>
         </OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="int_priceMax">
-          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">out_int_priceMax</CSharpReference>
+          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">out_int_priceMax</CSharpReference>
         </OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="int_priceMin">
-          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">out_int_priceMin</CSharpReference>
+          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">out_int_priceMin</CSharpReference>
         </OutArgument>
       </ufa:ShowFormActivity.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ufa:ShowFormActivity>

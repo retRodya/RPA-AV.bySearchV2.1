@@ -8,8 +8,8 @@
     "Width": 500,
     "Height": 500,
     "Theme": "Sandstone",
-    "ShowInTaskbar": true,
-    "ShowMargin": true,
+    "ShowInTaskbar": false,
+    "ShowMargin": false,
     "CustomStyle": ""
   },
   "Data": {
@@ -19,7 +19,6 @@
         "labelPosition": "left-left",
         "placeholder": "enter car make",
         "tableView": true,
-        "defaultValue": "Tesla",
         "validate": {
           "required": true
         },
@@ -34,7 +33,6 @@
         "labelPosition": "left-left",
         "placeholder": "enter car model",
         "tableView": true,
-        "defaultValue": "Model X",
         "key": "str_model",
         "type": "textfield",
         "labelWidth": 10,
@@ -45,7 +43,6 @@
         "label": "Price",
         "placeholder": "min price, BYN",
         "tableView": false,
-        "defaultValue": 0,
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
@@ -62,7 +59,6 @@
         "placeholder": "max price, BYN",
         "hideLabel": true,
         "tableView": false,
-        "defaultValue": 999999,
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
