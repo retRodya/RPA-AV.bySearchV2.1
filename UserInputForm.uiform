@@ -19,15 +19,15 @@
         "labelPosition": "left-left",
         "placeholder": "enter car make",
         "tableView": true,
-        "defaultValue": "Tesla",
         "validate": {
           "required": true
         },
-        "key": "str_make",
+        "key": "make",
         "type": "textfield",
+        "input": true,
+        "defaultValue": "Tesla",
         "labelWidth": 5,
-        "labelMargin": 5,
-        "input": true
+        "labelMargin": 5
       },
       {
         "label": "Model",
@@ -45,7 +45,7 @@
         "label": "Price",
         "placeholder": "min price, BYN",
         "tableView": false,
-        "defaultValue": 1,
+        "defaultValue": 0,
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
@@ -62,13 +62,13 @@
         "placeholder": "max price, BYN",
         "hideLabel": true,
         "tableView": false,
+        "defaultValue": 999999,
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
         "key": "int_priceMax",
         "type": "number",
-        "input": true,
-        "defaultValue": 999999
+        "input": true
       },
       {
         "label": "Send criteria",
