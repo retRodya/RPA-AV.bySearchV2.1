@@ -60,7 +60,7 @@
         "placeholder": "max price, BYN",
         "hideLabel": true,
         "tableView": false,
-        "delimiter": false,
+        "delimiter": true,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
         "validate": {

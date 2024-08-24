@@ -7,7 +7,7 @@
     <x:Property Name="out_dt_ads" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1237,2691</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1237,2834</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -274,7 +274,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Start point" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="866,2626" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Start point" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="866,2769" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -282,7 +282,7 @@
         <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="Different errors can occure during runtime. " DisplayName="Global Try Catch" sap:VirtualizedContainerService.HintSize="804,2507" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch sap2010:Annotation.AnnotationText="Different errors can occure during runtime. " DisplayName="Global Try Catch" sap:VirtualizedContainerService.HintSize="804,2650" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -290,14 +290,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Workflows" sap:VirtualizedContainerService.HintSize="766,2225" sap2010:WorkflowViewState.IdRef="Sequence_27">
+        <Sequence DisplayName="Workflows" sap:VirtualizedContainerService.HintSize="766,2368" sap2010:WorkflowViewState.IdRef="Sequence_27">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="It's important to put whole sequence in Main Seq to prevent error:&#xA;&#xA;System.Activities.ValidationException: An extension of type 'UiPath.Activities.Contracts.Persistence.IPersistenceBookmarks' must be configured in order to run this workflow. &#xA;&#xA;Просто делать подобное было очень интересно, решать проблемы и прочее. Какой-то фуллстек на минималках: вроде и прогаешь(хоть и визуально), а вроде еще и визуально даешь это представлять(как мини фронтэдер какой-то). Романтично, так сказать." DisplayName="Form fill Sequence" sap:VirtualizedContainerService.HintSize="704,1738" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence sap2010:Annotation.AnnotationText="It's important to put whole sequence in Main Seq to prevent error:&#xA;&#xA;System.Activities.ValidationException: An extension of type 'UiPath.Activities.Contracts.Persistence.IPersistenceBookmarks' must be configured in order to run this workflow. &#xA;&#xA;Просто делать подобное было очень интересно, решать проблемы и прочее. Какой-то фуллстек на минималках: вроде и прогаешь(хоть и визуально), а вроде еще и визуально даешь это представлять(как мини фронтэдер какой-то). Романтично, так сказать." DisplayName="Form fill Sequence" sap:VirtualizedContainerService.HintSize="704,1996" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="str_yes" />
             </Sequence.Variables>
@@ -327,7 +327,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
-            <If sap2010:Annotation.AnnotationText="YES require UiPath.Form.Activities v.23.4.7.&#xA;It will ask again in fututre.&#xA;&#xA;Because bugs accures on new versions:&#xA;&#xA;System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it. " DisplayName="if YES / NO (Orchestrator/Locally)" sap:VirtualizedContainerService.HintSize="642,1398" sap2010:WorkflowViewState.IdRef="If_2">
+            <If sap2010:Annotation.AnnotationText="YES require UiPath.Form.Activities v.23.4.7.&#xA;It will ask again in fututre.&#xA;&#xA;Because bugs accures on new versions:&#xA;&#xA;System.InvalidOperationException: The calling thread cannot access this object because a different thread owns it. " DisplayName="if YES / NO (Orchestrator/Locally)" sap:VirtualizedContainerService.HintSize="642,1656" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">str_yes == "Yes"</CSharpValue>
@@ -477,7 +477,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TaskCatalog="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="396fb35b-cef5-400d-8049-00a83c285ce1" DisplayName="User fills form activity" EnableBulkEdit="False" EnableDynamicForms="False" EnableV2="False" FolderPath="rodion8999@gmail.com's workspace" FormLayout="%[{&quot;label&quot;:&quot;Make&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car make&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;Tesla&quot;,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;str_make&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:5,&quot;labelMargin&quot;:5,&quot;input&quot;:true},{&quot;label&quot;:&quot;Model&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car model&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;Model X&quot;,&quot;key&quot;:&quot;str_model&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:5,&quot;labelMargin&quot;:5,&quot;input&quot;:true},{&quot;label&quot;:&quot;Price&quot;,&quot;placeholder&quot;:&quot;min price, BYN&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:0,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;int_priceMin&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Price&quot;,&quot;placeholder&quot;:&quot;max price, BYN&quot;,&quot;hideLabel&quot;:true,&quot;tableView&quot;:true,&quot;defaultValue&quot;:999999,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;validate&quot;:{&quot;max&quot;:999999},&quot;key&quot;:&quot;int_priceMax&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Send criteria&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;sendCriteria&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]" FormLayoutGuid="f7b635a0-60b9-48a7-81db-17a1d86f5caa" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="388,357" sap2010:WorkflowViewState.IdRef="CreateFormTask_2" TaskTitle="User fills form">
+                          <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TaskCatalog="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="f503b7b8-1ebd-4eb3-ae28-af98a4da88bf" DisplayName="User fills form activity" EnableBulkEdit="False" EnableDynamicForms="False" EnableV2="False" FolderPath="rodion8999@gmail.com's workspace" FormLayout="%[{&quot;label&quot;:&quot;Make&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car make&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;Tesla&quot;,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;str_make&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:5,&quot;labelMargin&quot;:5,&quot;input&quot;:true},{&quot;label&quot;:&quot;Model&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;placeholder&quot;:&quot;enter car model&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;Model X&quot;,&quot;key&quot;:&quot;str_model&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;labelWidth&quot;:5,&quot;labelMargin&quot;:5,&quot;input&quot;:true},{&quot;label&quot;:&quot;Price&quot;,&quot;placeholder&quot;:&quot;min price, BYN&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:0,&quot;delimiter&quot;:false,&quot;requireDecimal&quot;:false,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;int_priceMin&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Price&quot;,&quot;placeholder&quot;:&quot;max price, BYN&quot;,&quot;hideLabel&quot;:true,&quot;tableView&quot;:true,&quot;defaultValue&quot;:999999,&quot;delimiter&quot;:true,&quot;requireDecimal&quot;:false,&quot;validate&quot;:{&quot;max&quot;:999999},&quot;key&quot;:&quot;int_priceMax&quot;,&quot;type&quot;:&quot;number&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Send criteria&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;sendCriteria&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]" FormLayoutGuid="e3b6115a-e3de-4e03-bba7-6478d1545cec" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="388,357" sap2010:WorkflowViewState.IdRef="CreateFormTask_2" TaskTitle="User fills form">
                             <upaf:CreateFormTask.FormData>
                               <OutArgument x:TypeArguments="x:String" x:Key="str_make">
                                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">out_str_make</CSharpReference>
@@ -626,11 +626,11 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="NO =  Locally" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <Sequence DisplayName="NO =  Locally" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Userfills.uiformSequence" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="UserInputForm.uiformSequence.xaml">
@@ -650,7 +650,7 @@
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
@@ -682,7 +682,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ExcelDataSequence Workflow" sap:VirtualizedContainerService.HintSize="704,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="ExcelDataSequence.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke ExcelDataSequence Workflow" sap:VirtualizedContainerService.HintSize="704,80" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="ExcelDataSequence.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dt_ads">
                 <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">out_dt_ads</CSharpReference>
