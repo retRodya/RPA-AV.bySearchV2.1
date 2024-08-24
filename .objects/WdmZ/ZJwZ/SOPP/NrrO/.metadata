@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'BYN'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "NrrOuGPp6EW0h2q1oWcQSQ",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/NrrOuGPp6EW0h2q1oWcQSQ",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:36:49.8235573Z",
+  "Updated": "2024-08-24T20:36:49.8235573Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

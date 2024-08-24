@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click Make",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "tHcpzRXQKkaFNl92oBzX3g",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/tHcpzRXQKkaFNl92oBzX3g",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:36:41.8834277Z",
+  "Updated": "2024-08-24T20:36:41.8834277Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

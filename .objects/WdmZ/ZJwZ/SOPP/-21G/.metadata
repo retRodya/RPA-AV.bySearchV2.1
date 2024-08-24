@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'max price'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "-21GvrrGrUmgbXLrFwAMGQ",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/-21GvrrGrUmgbXLrFwAMGQ",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:37:16.061715Z",
+  "Updated": "2024-08-24T20:37:16.061715Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

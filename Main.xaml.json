@@ -54,11 +54,11 @@
       "DataSourceItems": null
     },
     {
-      "Name": "STR_URL_CARSAVBY",
-      "DisplayName": "STR_URL_CARSAVBY",
+      "Name": "out_dt_ads",
+      "DisplayName": "out_dt_ads",
       "Category": null,
       "Tooltip": null,
-      "Placeholder": "https://cars.av.by/",
+      "Placeholder": null,
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,

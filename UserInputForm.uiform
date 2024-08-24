@@ -5,9 +5,11 @@
   },
   "DesignProperties": {
     "Title": "Car criteria",
-    "Theme": "Default",
-    "ShowInTaskbar": true,
-    "ShowMargin": true,
+    "Width": 500,
+    "Height": 500,
+    "Theme": "Sandstone",
+    "ShowInTaskbar": false,
+    "ShowMargin": false,
     "CustomStyle": ""
   },
   "Data": {
@@ -17,22 +19,26 @@
         "labelPosition": "left-left",
         "placeholder": "enter car make",
         "tableView": true,
-        "key": "make",
+        "validate": {
+          "required": true
+        },
+        "key": "str_make",
         "type": "textfield",
-        "input": true,
-        "labelWidth": 3,
-        "labelMargin": 4
+        "labelWidth": 10,
+        "labelMargin": 3,
+        "input": true
       },
       {
         "label": "Model",
         "labelPosition": "left-left",
         "placeholder": "enter car model",
+        "description": "Enter model name correctly (e.g. Model X)",
         "tableView": true,
-        "key": "model",
+        "key": "str_model",
         "type": "textfield",
-        "input": true,
-        "labelWidth": 3,
-        "labelMargin": 3
+        "labelWidth": 10,
+        "labelMargin": 3,
+        "input": true
       },
       {
         "label": "Price",
@@ -41,7 +47,11 @@
         "delimiter": false,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
-        "key": "pricemMin",
+        "validate": {
+          "required": true,
+          "min": 0
+        },
+        "key": "int_priceMin",
         "type": "number",
         "input": true
       },
@@ -50,10 +60,13 @@
         "placeholder": "max price, BYN",
         "hideLabel": true,
         "tableView": false,
-        "delimiter": false,
+        "delimiter": true,
         "requireDecimal": false,
         "truncateMultipleSpaces": false,
-        "key": "priceMax",
+        "validate": {
+          "max": 999999
+        },
+        "key": "int_priceMax",
         "type": "number",
         "input": true
       },

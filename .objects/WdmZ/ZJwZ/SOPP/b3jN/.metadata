@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Show results button Check",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "b3jNFYaEQkuMRN8qCBRI-w",
+  "Reference": "AhCJEiCTkUypM6mbflUmyw/b3jNFYaEQkuMRN8qCBRI-w",
+  "ParentRef": "AhCJEiCTkUypM6mbflUmyw/SOPPauHab0OW1heQroIK3A",
+  "Created": "2024-08-24T20:41:53.3561983Z",
+  "Updated": "2024-08-24T20:41:53.3561983Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

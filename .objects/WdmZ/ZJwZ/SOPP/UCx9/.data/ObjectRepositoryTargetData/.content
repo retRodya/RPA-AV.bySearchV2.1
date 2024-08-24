@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kSuKaPphp0yAvMGqj3hbyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://cars.av.by/" CVScreenId="300cc656-1b33-477c-996a-ee60079417c9" CvTextArea="655, 684, 66, 19" CvTextArgument="4eha OT" CvType="Text" DesignTimeRectangle="655, 675, 100, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='richinput-control__label' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='richinput-control__label' parentid='__next' tag='SPAN' type='' aaname='Цена от' check:innerText='Цена от' /&gt;" Guid="22972b58-206f-405a-a2a6-17e73b572a3d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о продаже автомобилей в Беларуси. Купить или продать автомобиль с пробегом, новый или б/у на Автомалиновке.' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="acff96f412817741292c40c409556ebe.png" xmlns="">0-yUqFONPtEOywD8qH4TEZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
