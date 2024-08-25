@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="C4LefXpqiE65Vy9T3eRxaA" Reference="AhCJEiCTkUypM6mbflUmyw/9ZK2AC5JJk2iMt85_uN3Vg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://cars.av.by/" CVScreenId="66d682a9-f088-451b-91f2-1455952cac1e" CvElementArea="566, 738, 243, 47" CvTextArea="586, 753, 201, 15" CvTextArgument="Noka3aTb 596 06babnehnn" CvType="Button" DesignTimeRectangle="576, 741, 230, 42" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Показать *' tag='A' /&gt;" FuzzyAccuracy="0.4" FuzzySelectorArgument="&lt;webctrl aaname='Показать 596 объявлений' tag='A' type='' class='button button--secondary button--block' check:innerText='Показать 596 объявлений' /&gt;" Guid="bd866828-9347-46f4-90a2-6e38d36b60d2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о продаже автомобилей в Беларуси. Купить или продать автомобиль с пробегом, новый или б/у на Автомалиновке.' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="66e0504ddc1f9c5fc70c088b4cd3aaf2.png" xmlns="">0TloO109Ih0umIf5SnObncA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
