@@ -8,7 +8,7 @@
     <x:Property Name="TriggerEventArgs" Type="InArgument(ufa:FormInfoTriggerEventArgs)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1233,871</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1217,871</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -186,8 +186,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ufa:FormTriggerActivity x:TypeArguments="ufa:FormInfoTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="MinMaxForm Event Trigger" Enabled="True" Event="click.minButton" FormId="1dd2aad7-af61-4486-8286-45c87564c919" sap:VirtualizedContainerService.HintSize="450,191" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_1" SchedulingMode="Sequential" TriggerId="2c1d7343-4d4c-4371-a884-1f33429ab6af" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Go to STR_MINURL" sap:VirtualizedContainerService.HintSize="450,527" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="31eacb2c-f9fe-417e-b998-2863de34e406" Version="V2">
+    <ufa:FormTriggerActivity x:TypeArguments="ufa:FormInfoTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form Event Trigger" Enabled="True" Event="click.minButton" FormId="1dd2aad7-af61-4486-8286-45c87564c919" sap:VirtualizedContainerService.HintSize="450,191" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_1" SchedulingMode="Sequential" TriggerId="2c1d7343-4d4c-4371-a884-1f33429ab6af" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser + Go to STR_MINURL" sap:VirtualizedContainerService.HintSize="450,527" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="31eacb2c-f9fe-417e-b998-2863de34e406" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -199,7 +199,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Form+TriggerSequnce - Invoke Workflow File (Form+TriggerSequnce.xaml)" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Form+TriggerSequnce.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Form+TriggerSequnce Workflow" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Form+TriggerSequnce.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_str_minTitle" />
                 <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_ads" />

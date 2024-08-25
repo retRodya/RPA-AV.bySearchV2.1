@@ -30,16 +30,16 @@
                 "tableView": true,
                 "key": "str_minTitle",
                 "type": "textfield",
-                "labelWidth": 6,
+                "labelWidth": 10,
                 "input": true
               },
               {
                 "label": "Url",
                 "labelPosition": "left-left",
                 "tableView": true,
-                "key": "str_minUrl",
+                "key": "STR_MINURL",
                 "type": "textfield",
-                "labelWidth": 6,
+                "labelWidth": 10,
                 "input": true
               },
               {
@@ -48,7 +48,7 @@
                 "tableView": true,
                 "key": "str_minPrice",
                 "type": "textfield",
-                "labelWidth": 6,
+                "labelWidth": 10,
                 "input": true
               },
               {
@@ -85,16 +85,16 @@
                 "tableView": true,
                 "key": "str_maxTitle",
                 "type": "textfield",
-                "labelWidth": 6,
+                "labelWidth": 10,
                 "input": true
               },
               {
                 "label": "Url",
                 "labelPosition": "left-left",
                 "tableView": true,
-                "key": "str_maxUrl",
+                "key": "STR_MAXURL",
                 "type": "textfield",
-                "labelWidth": 6,
+                "labelWidth": 10,
                 "input": true
               },
               {
@@ -103,7 +103,7 @@
                 "tableView": true,
                 "key": "str_maxPrice",
                 "type": "textfield",
-                "labelWidth": 6,
+                "labelWidth": 10,
                 "input": true
               },
               {
@@ -135,6 +135,7 @@
         "action": "event",
         "showValidations": false,
         "theme": "danger",
+        "size": "lg",
         "tableView": false,
         "key": "exit",
         "type": "button",
