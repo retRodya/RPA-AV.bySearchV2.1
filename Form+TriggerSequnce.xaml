@@ -173,53 +173,45 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Form+TriggerSequence" sap:VirtualizedContainerService.HintSize="512,742" sap2010:WorkflowViewState.IdRef="Sequence_32">
+  <Sequence DisplayName="Form+TriggerSequence" sap:VirtualizedContainerService.HintSize="416,631" sap2010:WorkflowViewState.IdRef="Sequence_32">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Form+Trigger Seq" sap:VirtualizedContainerService.HintSize="450,654" sap2010:WorkflowViewState.IdRef="Sequence_31">
+    <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" sap2010:Annotation.AnnotationText="Can't make via Create Form Task cause of exception:&#xA;&#xA;System.Exception: Type 'System.Data.DataRow' cannot be serialized. Consider marking it with the DataContractAttribute attribute, and marking all of its members you want serialized with the DataMemberAttribute attribute. Alternatively, you can ensure that the type is public and has a parameterless constructor - all public members of the type will then be serialized, and no attributes will be required. &#xA;&#xA;И иксепшен не ловится TCF, хотя у меня весь мейн под ТКФ" DisplayName="Show Form" FormId="1dd2aad7-af61-4486-8286-45c87564c919" sap:VirtualizedContainerService.HintSize="354,425" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="True">
+      <ufa:ShowFormActivity.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="str_minTitle">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">in_str_minTitle</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_minUrl">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">GlobalVariablesNamespace.GlobalVariables.STR_MINURL</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_minPrice">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">in_str_minPrice</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_maxTitle">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">in_str_maxTitle</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_maxUrl">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">GlobalVariablesNamespace.GlobalVariables.STR_MAXURL</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_maxPrice">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">in_str_maxPrice</CSharpValue>
+        </InArgument>
+      </ufa:ShowFormActivity.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" sap2010:Annotation.AnnotationText="Can't make via Create Form Task cause of exception:&#xA;&#xA;System.Exception: Type 'System.Data.DataRow' cannot be serialized. Consider marking it with the DataContractAttribute attribute, and marking all of its members you want serialized with the DataMemberAttribute attribute. Alternatively, you can ensure that the type is public and has a parameterless constructor - all public members of the type will then be serialized, and no attributes will be required. &#xA;&#xA;И иксепшен не ловится TCF, хотя у меня весь мейн под ТКФ" DisplayName="Show Form" FormId="1dd2aad7-af61-4486-8286-45c87564c919" sap:VirtualizedContainerService.HintSize="388,425" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="True">
-        <ufa:ShowFormActivity.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="str_minTitle">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">in_str_minTitle</CSharpValue>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="str_minUrl">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">in_str_minUrl</CSharpValue>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="str_minPrice">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">in_str_minPrice</CSharpValue>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="str_maxTitle">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">in_str_maxTitle</CSharpValue>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="str_maxUrl">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">in_str_maxUrl</CSharpValue>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="str_maxPrice">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">in_str_maxPrice</CSharpValue>
-          </InArgument>
-        </ufa:ShowFormActivity.Arguments>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ufa:ShowFormActivity>
-      <ui:StartTriggers ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Run Form Triggers" sap:VirtualizedContainerService.HintSize="388,118" sap2010:WorkflowViewState.IdRef="StartTriggers_4" UnSafe="False" WorkflowFileName=".local\generated\Triggers.Generated.xaml">
-        <ui:StartTriggers.Arguments>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-        </ui:StartTriggers.Arguments>
-      </ui:StartTriggers>
-    </Sequence>
+    </ufa:ShowFormActivity>
+    <ui:StartTriggers ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Run Form Triggers" sap:VirtualizedContainerService.HintSize="354,118" sap2010:WorkflowViewState.IdRef="StartTriggers_4" UnSafe="False" WorkflowFileName=".local\generated\Triggers.Generated.xaml">
+      <ui:StartTriggers.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:StartTriggers.Arguments>
+    </ui:StartTriggers>
   </Sequence>
 </Activity>
