@@ -2,14 +2,12 @@
   <x:Members>
     <x:Property Name="in_dt_ads" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_str_minTitle" Type="InArgument(x:String)" />
-    <x:Property Name="in_str_minUrl" Type="InArgument(x:String)" />
     <x:Property Name="in_str_minPrice" Type="InArgument(x:String)" />
     <x:Property Name="in_str_maxTitle" Type="InArgument(x:String)" />
-    <x:Property Name="in_str_maxUrl" Type="InArgument(x:String)" />
     <x:Property Name="in_str_maxPrice" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1217,941</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1180,941</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">

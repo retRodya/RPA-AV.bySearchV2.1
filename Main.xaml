@@ -5,9 +5,13 @@
     <x:Property Name="out_int_priceMin" Type="OutArgument(x:Int32)" />
     <x:Property Name="out_int_priceMax" Type="OutArgument(x:Int32)" />
     <x:Property Name="out_dt_ads" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_str_minTitle" Type="InArgument(x:String)" />
+    <x:Property Name="in_str_maxTitle" Type="InArgument(x:String)" />
+    <x:Property Name="in_str_minPrice" Type="InArgument(x:String)" />
+    <x:Property Name="in_str_maxPrice" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1217,1464</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1180,1464</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -705,17 +709,23 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke MinMaxAssignSeq+InvokeForm+TriggerSeq Workflow" sap:VirtualizedContainerService.HintSize="450,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="MinMaxAssignSeq+InvokeForm+TriggerSeqSequence.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke MinMaxAssignSeq+InvokeForm+TriggerSeq Workflow" sap:VirtualizedContainerService.HintSize="450,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="MinMaxAssignSeq+InvokeForm+TriggerSeqSequence.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_ads">
-                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_145">out_dt_ads</CSharpValue>
+                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_152">out_dt_ads</CSharpValue>
               </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_str_minTitle" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_str_minUrl" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_str_minPrice" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_str_maxTitle" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_str_maxUrl" />
-              <InArgument x:TypeArguments="x:String" x:Key="in_str_maxPrice" />
+              <InArgument x:TypeArguments="x:String" x:Key="in_str_minTitle">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_153">in_str_minTitle</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_str_minPrice">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_155">in_str_minPrice</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_str_maxTitle">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_156">in_str_maxTitle</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_str_maxPrice">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">in_str_maxPrice</CSharpValue>
+              </InArgument>
             </ui:InvokeWorkflowFile.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
