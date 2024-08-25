@@ -2,14 +2,12 @@
   <x:Members>
     <x:Property Name="in_str_minTitle" Type="InArgument(x:String)" />
     <x:Property Name="in_dt_ads" Type="InArgument(sd:DataTable)" />
-    <x:Property Name="in_str_minUrl" Type="InArgument(x:String)" />
     <x:Property Name="in_str_minPrice" Type="InArgument(x:String)" />
     <x:Property Name="in_str_maxTitle" Type="InArgument(x:String)" />
-    <x:Property Name="in_str_maxUrl" Type="InArgument(x:String)" />
     <x:Property Name="in_str_maxPrice" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1233,858</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1217,696</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -42,6 +40,7 @@
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -184,20 +183,20 @@
         <InArgument x:TypeArguments="x:String" x:Key="str_minTitle">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">in_str_minTitle</CSharpValue>
         </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="str_minUrl">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">GlobalVariablesNamespace.GlobalVariables.STR_MINURL</CSharpValue>
-        </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="str_minPrice">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">in_str_minPrice</CSharpValue>
         </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="str_maxTitle">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">in_str_maxTitle</CSharpValue>
         </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="str_maxUrl">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">GlobalVariablesNamespace.GlobalVariables.STR_MAXURL</CSharpValue>
-        </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="str_maxPrice">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">in_str_maxPrice</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="g_str_minUrl">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_124">GlobalVariablesNamespace.GlobalVariables.g_str_minUrl</CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="g_str_maxUrl">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_125">GlobalVariablesNamespace.GlobalVariables.g_str_maxUrl</CSharpValue>
         </InArgument>
       </ufa:ShowFormActivity.Arguments>
       <sap:WorkflowViewStateService.ViewState>

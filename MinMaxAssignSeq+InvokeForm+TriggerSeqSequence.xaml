@@ -9,7 +9,7 @@
     <x:Property Name="in_str_maxPrice" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1079,941</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1217,941</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -57,6 +57,7 @@
       <x:String>UiPath.Platform.Triggers.Scope</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -216,7 +217,7 @@
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
                 <InArgument x:TypeArguments="sd:DataRow">
-                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_144" xml:space="preserve">in_dt_ads.Select()
+                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_169" xml:space="preserve">in_dt_ads.Select()
                   .OrderBy(row =&gt; row.Field&lt;double&gt;("double_price"))
                   .FirstOrDefault()</CSharpValue>
                 </InArgument>
@@ -237,12 +238,12 @@
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
               <ui:AssignOperation.To>
                 <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">GlobalVariablesNamespace.GlobalVariables.STR_MINURL</CSharpReference>
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">GlobalVariablesNamespace.GlobalVariables.g_str_minUrl</CSharpReference>
                 </OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_166">dr_minRow["str_url"].ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_170">dr_minRow["str_url"].ToString()</CSharpValue>
                 </InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
@@ -299,12 +300,12 @@
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
               <ui:AssignOperation.To>
                 <OutArgument x:TypeArguments="x:String">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">GlobalVariablesNamespace.GlobalVariables.STR_MAXURL</CSharpReference>
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_26">GlobalVariablesNamespace.GlobalVariables.g_str_maxUrl</CSharpReference>
                 </OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_153">dr_maxRow["str_url"].ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_171">dr_maxRow["str_url"].ToString()</CSharpValue>
                 </InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
@@ -338,17 +339,11 @@
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_ads">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_156">in_dt_ads</CSharpValue>
         </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_str_minUrl">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_164">GlobalVariablesNamespace.GlobalVariables.STR_MINURL</CSharpValue>
-        </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_str_minPrice">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">in_str_minPrice</CSharpValue>
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_174">in_str_minPrice</CSharpValue>
         </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_str_maxTitle">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_159">in_str_maxTitle</CSharpValue>
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_str_maxUrl">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_165">GlobalVariablesNamespace.GlobalVariables.STR_MAXURL</CSharpValue>
         </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_str_maxPrice">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_161">in_str_maxPrice</CSharpValue>

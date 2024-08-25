@@ -37,7 +37,7 @@
                 "label": "Url",
                 "labelPosition": "left-left",
                 "tableView": true,
-                "key": "STR_MINURL",
+                "key": "g_str_minUrl",
                 "type": "textfield",
                 "labelWidth": 10,
                 "input": true
@@ -45,6 +45,7 @@
               {
                 "label": "Price",
                 "labelPosition": "left-left",
+                "suffix": ", BYN",
                 "tableView": true,
                 "key": "str_minPrice",
                 "type": "textfield",
@@ -92,7 +93,7 @@
                 "label": "Url",
                 "labelPosition": "left-left",
                 "tableView": true,
-                "key": "STR_MAXURL",
+                "key": "g_str_maxUrl",
                 "type": "textfield",
                 "labelWidth": 10,
                 "input": true
@@ -100,6 +101,7 @@
               {
                 "label": "Price",
                 "labelPosition": "left-left",
+                "suffix": ", BYN",
                 "tableView": true,
                 "key": "str_maxPrice",
                 "type": "textfield",
